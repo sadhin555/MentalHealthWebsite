@@ -1,0 +1,92 @@
+h1{
+font-family: "Cormorant";
+
+}
+
+
+/* CSS */
+.button {
+margin-left: 600px;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  border-radius: 91px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:after {
+   
+  content: "";
+  background-color: #a470f3;
+  border-radius: 91px;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}
+
+img.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 30px;
+  margin-left: 1100px;
+  transition: transform .2s;
+  
+  
+}
+img.sticky:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+  button {
+    background-color: #62529c;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    
+}
+
+button:hover{
+    background-color: #fff;
+    color: #62529c ;
+    border: #62529c;
+    
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
